@@ -1,0 +1,65 @@
+/* src/App.css  (React / Vite) */
+/* ---------------------------------------------------
+   Feel free to tweak colours, spacing, or fonts.
+   Nothing here is critical—the app will run fine
+   even if this file is empty.
+   --------------------------------------------------- */
+
+:root {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.4;
+    color-scheme: light dark;
+}
+
+body {
+    margin: 0; /* remove default browser margin */
+    background: #f5f7fa; /* subtle grey backdrop */
+}
+
+main {
+    max-width: 600px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+h1,
+h2 {
+    margin-top: 0;
+    font-weight: 600;
+}
+
+input[type="text"] {
+    padding: 0.4rem 0.6rem;
+    border: 1px solid #cdd5df;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+button {
+    margin-left: 0.5rem;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background: #2563eb; /* blue */
+    color: #fff;
+}
+
+    button:hover {
+        background: #1e4dc6;
+    }
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    margin: 0.3rem 0;
+}
+
+/* strike?through*
