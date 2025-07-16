@@ -1,0 +1,26 @@
+services:
+  gateway:
+    build: ./gateway
+    ports:
+      - "8080:8080"
+    depends_on:
+      - task-service
+      - timer-service
+
+  task-service:
+    build: ./services/task-service
+    volumes:
+        - taskdb:/data            # mount volume as a directory
+    environment:
+        - DB_FILE=/data/tasks.json
+
+  timer-service:
+    build: ./services/timer-service
+
+  webapp:
+    build: ./webapp
+    ports:
+        - "5173:80"
+
+volumes:
+  taskdb:
